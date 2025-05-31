@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Accessible Learning Platform</h1>
+    <textarea id="inputText" placeholder="Paste text here..." rows="10" cols="70"></textarea>
+    <div class="buttons">
+        <button onclick="convertTTS()">Convert to Audio</button>
+        <button onclick="summarize()">Summarize</button>
+        <button onclick="convertBraille()">Convert to Braille</button>
+    </div>
+    <audio id="audioPlayer" controls style="display:none"></audio>
+    <div id="summary"></div>
+    <div id="braille"></div>
+    <script src="script.js"></script>
+</body>
+</html>
